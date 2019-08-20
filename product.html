@@ -14,36 +14,30 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
-/* @media only screen and (max-width: 600px) {#main {margin-left: 0}} */
+ @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 body {
   font-family: Montserrat;
   margin: 0;
 }
-
 * {
   box-sizing: border-box;
 }
-
 img {
   vertical-align: middle;
 }
-
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
   margin: 0px auto;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -60,19 +54,16 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: grey;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: black;
@@ -81,7 +72,6 @@ img {
   position: absolute;
   top: 0;
 }
-
 /* Container for image text */
 .caption-container {
   text-align: center;
@@ -90,24 +80,20 @@ img {
   color: white;
   font-size: 25px;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Six columns side by side */
 .column {
   float: left;
   width: 20%;
 }
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
@@ -119,40 +105,46 @@ img {
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <!-- <img src="li.jpg style="width:100%"> -->
+
+  </div>
   <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-lightgrey">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
   <a href="product.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
     <i class="fa fa-phone w3-xxlarge"></i>
-    <p>PRODUCT</p>
+    <p>PING!</p>
   </a>
-  <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p> -->
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT US</p>
+  </a>
+  <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-money w3-xxlarge"></i>
+    <p>DONATE</p>
   </a>
 </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-lightgrey w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="index.html" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button" style="width:33% !important">PRODUCT</a>
   </div>
-</div> -->
+</div>
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
+  <br>
+  <div align="right">
+        <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F" style= "text-decoration:none" "text-align:right" > TRANSLATE </a>
+        </button>
+  </div>
   <header class="w3-container w3-padding-32 w3-center w3-lightgrey" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small"></span> PING!</h1>
     <p>International Notifcation Platform</p>
-    <img src="hello.jpg" alt="boy" class="w3-image" width="300" height="308">
+    <img src="pic3.jpg" alt="boy" class="w3-image" width="400" height="408">
   </header>
   <div class="w3-content w3-justify w3-text-grey w3-padding-50" id="about">
       <h2 class="w3-text-black">How to Use Ping!</h2>
@@ -234,15 +226,12 @@ img {
     <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("mySlides");

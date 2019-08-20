@@ -15,6 +15,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+
 </style>
 <body class="w3-lightgrey">
 
@@ -26,32 +28,114 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
   <a href="product.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
     <i class="fa fa-phone w3-xxlarge"></i>
-    <p>PRODUCT</p>
+    <p>PING!</p>
+  </a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT US</p>
+  </a>
+  <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-money w3-xxlarge"></i>
+    <p>DONATE</p>
   </a>
 </nav>
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-lightgrey w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="index.html" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button" style="width:33% !important">PRODUCT</a>
   </div>
 </div>
 
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
+  <br>
+  <div align="right">
+        <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F" style= "text-decoration:none" "text-align:right" > TRANSLATE </a>
+        </button>
+  </div>
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-lightgrey" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small"></span> PING!</h1>
     <p>International Notifcation Platform</p>
-    <img src="li.jpg" alt="boy" class="w3-image" width="300" height="308">
+    <!-- <img src="li.jpg" alt="boy" class="w3-image" width="300" height="308"> -->
   </header>
+
+  <style>
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  </style>
+
+
+<center>
+  <p>
+  <div class="gallery">
+    <a target="_blank" href="liel4.jpg">
+      <img src="liel4.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Liel Ezroni</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="sandy4.jpg">
+      <img src="sandy4.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Sandy Tan</div>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="sarker4x.jpg">
+      <img src="sarker4.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Sarker Noha</div>
+  </div>
+</p>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
   <div class="w3-content w3-justify w3-text-grey w3-padding-50" id="about">
     <!-- <h2 class="w3-text-black">Our Mission</h2>
 <hr style="width:300px" class="w3-opacity">
@@ -61,20 +145,20 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p class="w3-wide w3-text-black">Liel Ezroni</p>
     <div class="w3-white">
       <p>Hello I'm Liel and I am a rising junior. I'm really interested in STEM and in CS. In addition to STEM, I really enjoy traveling with friends and family. I especially love learning about new cultures and customes when visiting new places. Hope you enjoy this website and subscribe to PING! </p>
-      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/liel-ezroni-7b501b190/"> CONNECT WITH ME ON LINKDEN</a>
+      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/liel-ezroni-7b501b190/" style= "text-decoration:none"> CONNECT WITH ME ON LINKDEN</a>
       </button>
 
-    <p class="w3-wide">Sandy</p>
+    <p class="w3-wide">Sandy Tan</p>
     <div class="w3-white">
       <p>My name is Sandy and I am a rising junior. I have a really big obsession over golden retrievers and the DC Universe TV shows! On a normal weekend, if I'm not "practicing" the guitar or have my nose in a book, I'm probably being a foodie in Midtown. This project was really a wild ride for us. We went from struggling to download Node.js to enabling PING! to run and building a whole website on top of it. In the future, I hope I can pursue a career in technology and come back to PING! to make it even more accessible for people all over the world.</p>
-      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/sandy-tan-2b57bb170/"> CONNECT WITH ME ON LINKDEN</a>
+      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/sandy-tan-2b57bb170/" style= "text-decoration:none"> CONNECT WITH ME ON LINKDEN</a>
       </button>
       <!-- <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div> -->
-    <p class="w3-wide">Sarker</p>
+    <p class="w3-wide">Sarker Noha</p>
     <div class="w3-white">
       <p>Welcome to PING! :) Here is a little scoop about me . Hi, my name is Sarker I am a rising senior and I  love to binge watch Netflix series. I love going outside and having an adventure with friends and family. I love to be goofy and I love to tell jokes even the cheesy jokes too. </p>
-      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/sarker-noha-171bb8162/"> CONNECT WITH ME ON LINKDEN</a>
+      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/sarker-noha-171bb8162/" style= "text-decoration:none"> CONNECT WITH ME ON LINKDEN</a>
       </button>
 <div class="w3-padding-64 w3-content w3-text-black" id="contact">
   <h2 class="w3-text-black" style="font-size:30px" >Contact Us</h2>
@@ -83,5 +167,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> New York, US</p>
     <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="mailto:pingcontact@yahoo.com">Email Us</a></p>
     <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>+1 (516) 303-4442</p>
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Follow Us on Facebook: @pingsmsalerts</p>
 </body>
 </html>

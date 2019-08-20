@@ -15,7 +15,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
-/* @media only screen and (max-width: 600px) {#main {margin-left: 0}} */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
 <body class="w3-lightgrey">
 
@@ -27,32 +27,38 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
   <a href="product.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
     <i class="fa fa-phone w3-xxlarge"></i>
-    <p>PRODUCT</p>
+    <p>PING!</p>
   </a>
-  <!-- <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p> -->
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT US</p>
+  </a>
+  <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-lightgrey">
+    <i class="fa fa-money w3-xxlarge"></i>
+    <p>DONATE</p>
   </a>
 </nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-lightgrey w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="index.html" class="w3-bar-item w3-button" style="width:33% !important">HOME</a>
+    <a href="about.html" class="w3-bar-item w3-button" style="width:33% !important">ABOUT</a>
+    <a href="product.html" class="w3-bar-item w3-button" style="width:33% !important">PRODUCT</a>
   </div>
-</div> -->
+</div>
 
 <!-- Page Content -->
+
+
+
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
+  <br>
+  <div align="right">
+        <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F" style= "text-decoration:none" "text-align:right" > TRANSLATE </a>
+        </button>
+  </div>
   <header class="w3-container w3-padding-32 w3-center w3-lightgrey" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small"></span> PING!</h1>
     <p>International Notifcation Platform</p>
@@ -63,39 +69,192 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr style="width:300px" class="w3-opacity">
     <p>Our group looks to create a platform using the twilio API to help individuals living in third world/ underdeveloped countries stay informed and alert by sending messages. We plan to develop a system where we can send certain individuals messages (ex: when the next food/water/medical shipment from Unicef will arrive, if there are weather conditions that could be dangerous, or even nearby attacks) so people can be quickly updated on extremely important information. Furthermore, these messages would be based on the certain individuals location.
     </p>
-    <!-- <h3 class="w3-padding-16 w3-text-black">About The Creators</h3>
-    <p class="w3-wide">Liel Ezroni</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Sandy</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Sarker</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div> -->
 <br>
-    <div class="w3-content w3-justify w3-text-grey w3-padding-50" id="about">
-      <h2 class="w3-text-black" style="font-size:30px">Translate Our Webpage!</h2>
-      <hr style="width:300px" class="w3-opacity">
-      <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F"> TRANSLATE </a>
-      </button>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-50" id="about">
+  <h2 class="w3-text-black" style="font-size:30px"></h2>
+  <hr style="width:300px" class="w3-opacity">
+  </header>
+
+  <center></font size></center><center><font size = "3"><p style= "color:black">Click through the images below!</p></font size></center>
+    <style>
+    * {box-sizing: border-box}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    </style>
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="haiti2.jpg" style="width:100%" height="600">
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="haiti1.jpg" style="width:100%" height="600">
+          <!--<div class="text">Caption Two</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="haiti3.jpg" style="width:100%" height="600">
+          <!--<div class="text">Caption Three</div>-->
+
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <center></font size></center><center><font size = "3"><p style= "color:black">In 2010 Haiti was hit with a 7.0 Mw earthquake that resulted in catastrophic damage all over the nation. Prior to the earthquake, individuals in Haiti did not have a strong or affordable internet infrastructure. Thus, the nation's citizens had limited communication and knowledge of significant events. With PING! individuals could be notified when a natural disaster is about to occur and what safety precautions to take. Furthermore, PING! can help nations with the recovery and relief process by connecting people to essential resources such as food, shelter, medicine, and water.</p></font size></center>
+
+
+
+<br>
+<br>
+<p>
+</p>
+
+
+
+
 
 <p></p>
   <br>
+
 <p>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -111,145 +270,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <br>
 
-    <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Partners -->
-      <!-- </div>
-     <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-
-    <!-- Grid for pricing tables -->
-    <!-- <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px" id="photos">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-lightgrey">Sign Up</button>
-          </li>
-        </ul> -->
-      <!-- </div> -->
-
-      <!-- <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2> -->
-            <!-- <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-lightgrey">Sign Up</button>
-          </li>
-        </ul>
-      </div> -->
-    <!-- End Grid/Pricing tables -->
-    <!-- </div> -->
-
-    <!-- Testimonials -->
-    <!-- <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br> -->
-
-    <!-- <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p> -->
-  <!-- End About Section -->
-  <!-- </div> -->
-
-  <!-- Portfolio Section -->
-  <!-- <div class="w3-padding-64 w3-content">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity"> -->
-
-    <!-- Grid for photos -->
-    <!-- <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
-      </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div> -->
-    <!-- End photo grid -->
-    <!-- </div> -->
-  <!-- End Portfolio Section -->
-  <!-- </div>
- -->
-  <!-- Contact Section -->
-  <!-- <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
-    <p>Lets get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form> -->
-  <!-- End Contact Section -->
-  <!-- </div> -->
-
-    <!-- Footer -->
-  <!-- <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
-
-  <!-- End footer -->
-  <!-- </footer> -->
-
-<!-- END PAGE CONTENT -->
-<!-- </div>  -->
 
 </body>
 </html>
