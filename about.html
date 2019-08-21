@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PING!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,7 +56,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <br>
   <div align="right">
-        <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F" style= "text-decoration:none" "text-align:right" > TRANSLATE </a>
+        <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://translate.google.com/translate?sl=auto&tl=es&u=http%3A%2F%2Fping2.0.s3-website-us-east-1.amazonaws.com%2F" style= "text-decoration:none text-align:right" > TRANSLATE </a>
         </button>
   </div>
   <!-- Header/Home -->
@@ -68,31 +69,53 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <style>
 
   div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+  margin: 30px;
+  border: 1px solid #ccc;
+  width: 200px;
+  position: relative;
+  overflow:hidden !important;
+
+
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  width:100%;
+}
+
+.hi {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+overflow:hidden !important;
+align-items: center;
+justify-content: center;
+
+}
+body{
+overflow:hidden !important;
+}
+@media screen and (min-width: 360px){
+  p {
+    width: 100% !important;
   }
 
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
+}
 
-  div.gallery img {
-    width: 100%;
-    height: auto;
 
-  }
 
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
   </style>
 
 
 <center>
-  <div class "hi">
+  <div class= "hi">
   <div class="gallery">
     <a target="_blank" href="liel4.jpg">
       <img src="liel4.jpg" alt="Cinque Terre" width="100%" >
@@ -113,36 +136,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </a>
     <div class="desc">Sarker Noha</div>
   </div>
-  
-</p>
+</div>
+
 </center>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
 
   <div class="w3-content w3-justify w3-text-grey w3-padding-50" id="about">
     <!-- <h2 class="w3-text-black">Our Mission</h2>
 <hr style="width:300px" class="w3-opacity">
     <p>Our group looks to create a platform using the twilio API to help individuals living in third world/ underdeveloped countries stay informed and alert by sending messages. We plan to develop a system where we can send certain individuals messages (ex: when the next food/water/medical shipment from Unicef will arrive, if there are weather conditions that could be dangerous, or even nearby attacks) so people can be quickly updated on extremely important information. Furthermore, these messages would be based on the certain individuals location.
     </p> -->
+
+
+    <br>
+    <div class = "page-text">
     <h3 class="w3-padding-16 w3-text-black" style="font-size:30px" >About The Creators</h3>
     <p class="w3-wide w3-text-black">Liel Ezroni</p>
     <div class="w3-white">
@@ -162,13 +168,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p>Welcome to PING! :) Here is a little scoop about me . Hi, my name is Sarker I am a rising senior and I  love to binge watch Netflix series. I love going outside and having an adventure with friends and family. I love to be goofy and I love to tell jokes even the cheesy jokes too. </p>
       <button class="w3-button w3-light-grey w3-padding-large"> <a href="https://www.linkedin.com/in/sarker-noha-171bb8162/" style= "text-decoration:none"> CONNECT WITH ME ON LINKDEN</a>
       </button>
-<div class="w3-padding-64 w3-content w3-text-black" id="contact">
-  <h2 class="w3-text-black" style="font-size:30px" >Contact Us</h2>
-  <hr class="w3-opacity" style="width:100px>
-  <div class="w3-section w3-text-dark-grey">
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> New York, US</p>
-    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="mailto:pingcontact@yahoo.com">Email Us</a></p>
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>+1 (516) 303-4442</p>
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Facebook: @pingsmsalerts</p>
+
+
+
+
+
+
+
+
+      <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+        <h2 class="w3-text-black" style="font-size:30px" >Contact Us</h2>
+        <hr class="w3-opacity" style="width:100px>
+        <div class="w3-section w3-text-dark-grey">
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> New York, US</p>
+          <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="mailto:pingcontact@yahoo.com">Email Us</a></p>
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>+1 (516) 303-4442</p>
+          <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Facebook: @pingsmsalerts</p>
+
+  </div>
 </body>
 </html>
